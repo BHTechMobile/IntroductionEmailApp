@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "PreviewViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController{
+    IntroType introType;
+}
 
 @end
