@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     // Do any additional setup after loading the view.
 }
 
@@ -37,12 +38,12 @@
     if([[segue identifier] isEqualToString:@"pushPermissionPressed"]){
         introType = IntroTypePermission;
         PreviewViewController *preview = (PreviewViewController *)[segue destinationViewController];
-        NSLog(@"button1");
+        [preview setIntrotype:IntroTypePermission];
     }
     if([[segue identifier] isEqualToString:@"pushSimplePressed"]){
         introType = IntroTypeSimple;
         PreviewViewController *preview = (PreviewViewController *)[segue destinationViewController];
-                NSLog(@"button2");
+        [preview setIntrotype:IntroTypeSimple];
     }
 }
 
