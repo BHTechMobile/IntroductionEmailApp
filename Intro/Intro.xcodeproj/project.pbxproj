@@ -12,6 +12,9 @@
 		CE8E37161A10B3FB002DAE30 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E37151A10B3FB002DAE30 /* PreviewViewController.m */; };
 		CE8E37191A10B410002DAE30 /* ChooseContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E37181A10B410002DAE30 /* ChooseContactViewController.m */; };
 		CE8E371C1A10B41E002DAE30 /* ThanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E371B1A10B41E002DAE30 /* ThanksViewController.m */; };
+		CED3815F1A11AD5A00369373 /* FormsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3815E1A11AD5A00369373 /* FormsViewController.m */; };
+		CED381621A11AD8C00369373 /* SuggestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED381611A11AD8C00369373 /* SuggestionView.m */; };
+		CED381641A11ADA500369373 /* SuggestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED381631A11ADA500369373 /* SuggestionView.xib */; };
 		CEDEEA1F1A10B2A600C5AC93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDEEA1E1A10B2A600C5AC93 /* main.m */; };
 		CEDEEA221A10B2A600C5AC93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDEEA211A10B2A600C5AC93 /* AppDelegate.m */; };
 		CEDEEA251A10B2A600C5AC93 /* Intro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDEEA231A10B2A600C5AC93 /* Intro.xcdatamodeld */; };
@@ -43,6 +46,12 @@
 		CE8E37181A10B410002DAE30 /* ChooseContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseContactViewController.m; sourceTree = "<group>"; };
 		CE8E371A1A10B41E002DAE30 /* ThanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThanksViewController.h; sourceTree = "<group>"; };
 		CE8E371B1A10B41E002DAE30 /* ThanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThanksViewController.m; sourceTree = "<group>"; };
+		CED3815B1A11AB5F00369373 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CED3815D1A11AD5A00369373 /* FormsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormsViewController.h; sourceTree = "<group>"; };
+		CED3815E1A11AD5A00369373 /* FormsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormsViewController.m; sourceTree = "<group>"; };
+		CED381601A11AD8C00369373 /* SuggestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionView.h; sourceTree = "<group>"; };
+		CED381611A11AD8C00369373 /* SuggestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionView.m; sourceTree = "<group>"; };
+		CED381631A11ADA500369373 /* SuggestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionView.xib; sourceTree = "<group>"; };
 		CEDEEA191A10B2A600C5AC93 /* Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDEEA1D1A10B2A600C5AC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDEEA1E1A10B2A600C5AC93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +109,7 @@
 				CE8E370E1A10B39E002DAE30 /* Services */,
 				CE8E370F1A10B39E002DAE30 /* UIControllers */,
 				CE8E37101A10B39E002DAE30 /* Utilities */,
+				CED3815B1A11AB5F00369373 /* Constants.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -129,6 +139,11 @@
 				CE8E37181A10B410002DAE30 /* ChooseContactViewController.m */,
 				CE8E371A1A10B41E002DAE30 /* ThanksViewController.h */,
 				CE8E371B1A10B41E002DAE30 /* ThanksViewController.m */,
+				CED3815D1A11AD5A00369373 /* FormsViewController.h */,
+				CED3815E1A11AD5A00369373 /* FormsViewController.m */,
+				CED381601A11AD8C00369373 /* SuggestionView.h */,
+				CED381611A11AD8C00369373 /* SuggestionView.m */,
+				CED381631A11ADA500369373 /* SuggestionView.xib */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -285,6 +300,7 @@
 			files = (
 				CEDEEA2B1A10B2A600C5AC93 /* Main.storyboard in Resources */,
 				CEDEEA301A10B2A600C5AC93 /* LaunchScreen.xib in Resources */,
+				CED381641A11ADA500369373 /* SuggestionView.xib in Resources */,
 				CEDEEA2D1A10B2A600C5AC93 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +357,9 @@
 				CE8E37191A10B410002DAE30 /* ChooseContactViewController.m in Sources */,
 				CE8E37161A10B3FB002DAE30 /* PreviewViewController.m in Sources */,
 				CEDEEA251A10B2A600C5AC93 /* Intro.xcdatamodeld in Sources */,
+				CED381621A11AD8C00369373 /* SuggestionView.m in Sources */,
 				CE8E37131A10B3EF002DAE30 /* HomeViewController.m in Sources */,
+				CED3815F1A11AD5A00369373 /* FormsViewController.m in Sources */,
 				CE8E371C1A10B41E002DAE30 /* ThanksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
