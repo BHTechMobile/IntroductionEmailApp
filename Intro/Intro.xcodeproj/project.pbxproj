@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3AA2C922DE89D45219865D9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84614C4698B45245415C9024 /* libPods.a */; };
+		CE2CAF6E1A1393BD00DCEE03 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CAF6D1A1393BD00DCEE03 /* Email.m */; };
+		CE2CAF701A139AB600DCEE03 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CAF6F1A139AB600DCEE03 /* MessageUI.framework */; };
+		CE2CAF741A13A55100DCEE03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CAF711A13A55100DCEE03 /* AVFoundation.framework */; };
+		CE2CAF751A13A55100DCEE03 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CAF721A13A55100DCEE03 /* CoreFoundation.framework */; };
+		CE2CAF761A13A55100DCEE03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CAF731A13A55100DCEE03 /* Foundation.framework */; };
 		CE7E19301A11B8B300D2A4D6 /* Contacts_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E192F1A11B8B300D2A4D6 /* Contacts_Test.m */; };
 		CE7E19351A11B8BE00D2A4D6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E19321A11B8BE00D2A4D6 /* Contact.m */; };
 		CE7E19361A11B8BE00D2A4D6 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E19341A11B8BE00D2A4D6 /* Contacts.m */; };
@@ -42,6 +47,12 @@
 		385C33071ABFE5F92CE20960 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		84614C4698B45245415C9024 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE839D5B2ECE28E36BDDD038 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE2CAF6C1A1393BD00DCEE03 /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		CE2CAF6D1A1393BD00DCEE03 /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		CE2CAF6F1A139AB600DCEE03 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CE2CAF711A13A55100DCEE03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE2CAF721A13A55100DCEE03 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CE2CAF731A13A55100DCEE03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE7E192F1A11B8B300D2A4D6 /* Contacts_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts_Test.m; sourceTree = "<group>"; };
 		CE7E19311A11B8BE00D2A4D6 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		CE7E19321A11B8BE00D2A4D6 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
@@ -82,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2CAF741A13A55100DCEE03 /* AVFoundation.framework in Frameworks */,
+				CE2CAF751A13A55100DCEE03 /* CoreFoundation.framework in Frameworks */,
+				CE2CAF761A13A55100DCEE03 /* Foundation.framework in Frameworks */,
+				CE2CAF701A139AB600DCEE03 /* MessageUI.framework in Frameworks */,
 				CE7E19381A11B8C800D2A4D6 /* AddressBook.framework in Frameworks */,
 				3AA2C922DE89D45219865D9B /* libPods.a in Frameworks */,
 			);
@@ -100,6 +115,10 @@
 		02021DCA9028391FD4F6E74E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE2CAF711A13A55100DCEE03 /* AVFoundation.framework */,
+				CE2CAF721A13A55100DCEE03 /* CoreFoundation.framework */,
+				CE2CAF731A13A55100DCEE03 /* Foundation.framework */,
+				CE2CAF6F1A139AB600DCEE03 /* MessageUI.framework */,
 				CE7E19371A11B8C800D2A4D6 /* AddressBook.framework */,
 				84614C4698B45245415C9024 /* libPods.a */,
 			);
@@ -134,6 +153,8 @@
 				CE7E19321A11B8BE00D2A4D6 /* Contact.m */,
 				CE7E19331A11B8BE00D2A4D6 /* Contacts.h */,
 				CE7E19341A11B8BE00D2A4D6 /* Contacts.m */,
+				CE2CAF6C1A1393BD00DCEE03 /* Email.h */,
+				CE2CAF6D1A1393BD00DCEE03 /* Email.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -372,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDEEA221A10B2A600C5AC93 /* AppDelegate.m in Sources */,
+				CE2CAF6E1A1393BD00DCEE03 /* Email.m in Sources */,
 				CEDEEA1F1A10B2A600C5AC93 /* main.m in Sources */,
 				CE7E19351A11B8BE00D2A4D6 /* Contact.m in Sources */,
 				CE8E37191A10B410002DAE30 /* ChooseContactViewController.m in Sources */,

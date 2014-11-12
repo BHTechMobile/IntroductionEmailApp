@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 #import "ChooseContactViewController.h"
+#import "Email.h"
+
 @interface PreviewViewController : UIViewController{
     
 }
 
-@property (nonatomic) IntroType introtype;
+@property (strong, nonatomic) Email* email;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 @end
