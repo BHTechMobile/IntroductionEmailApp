@@ -1,10 +1,4 @@
-//
-//  HomeViewController.m
-//  Intro
-//
-//  Created by Tommy on 11/10/14.
-//  Copyright (c) 2014 BHTech Mobile. All rights reserved.
-//
+
 
 #import "HomeViewController.h"
 
@@ -34,6 +28,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"pushPermissionPressed"]){
+        FormsViewController *form = (FormsViewController *)[segue destinationViewController];
+        [form setIntrotype:IntroTypePermission];
+        NSLog(@" permission home");
+    } else
+    if([[segue identifier] isEqualToString:@"pushSimplePressed"]){
+        FormsViewController *form = (FormsViewController *)[segue destinationViewController];
+        [form setIntrotype:IntroTypeSimple];
+        NSLog(@" simple home");
+    }
+}
 
 
 @end
