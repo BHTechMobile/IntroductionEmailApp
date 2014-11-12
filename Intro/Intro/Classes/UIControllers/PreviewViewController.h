@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "ChooseContactViewController.h"
+@interface PreviewViewController : UIViewController{
+    
+}
 
-@interface PreviewViewController : UIViewController
+@property (nonatomic) IntroType introtype;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 @end
