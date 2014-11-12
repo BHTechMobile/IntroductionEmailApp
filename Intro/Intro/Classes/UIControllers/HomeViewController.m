@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     // Do any additional setup after loading the view.
 }
 
@@ -33,5 +34,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"pushPermissionPressed"]){
+        FormsViewController *form = (FormsViewController *)[segue destinationViewController];
+        [form setIntrotype:IntroTypePermission];
+        NSLog(@" permission home");
+    } else
+    if([[segue identifier] isEqualToString:@"pushSimplePressed"]){
+        FormsViewController *form = (FormsViewController *)[segue destinationViewController];
+        [form setIntrotype:IntroTypeSimple];
+        NSLog(@" simple home");
+    }
+}
+
 
 @end
