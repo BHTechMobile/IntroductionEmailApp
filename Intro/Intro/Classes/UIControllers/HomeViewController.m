@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     // Do any additional setup after loading the view.
 }
 
@@ -33,5 +34,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
