@@ -34,18 +34,6 @@
     // Pass the selected object to the new view controller.
 }
 */
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier] isEqualToString:@"pushPermissionPressed"]){
-        introType = IntroTypePermission;
-        PreviewViewController *preview = (PreviewViewController *)[segue destinationViewController];
-        [preview setIntrotype:IntroTypePermission];
-    }
-    if([[segue identifier] isEqualToString:@"pushSimplePressed"]){
-        introType = IntroTypeSimple;
-        PreviewViewController *preview = (PreviewViewController *)[segue destinationViewController];
-        [preview setIntrotype:IntroTypeSimple];
-    }
-}
 
 
 @end

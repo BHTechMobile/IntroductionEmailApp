@@ -10,8 +10,6 @@
 #import "Constants.h"
 #import "PreviewViewController.h"
 
-@interface HomeViewController : UIViewController{
-    IntroType introType;
-}
+@interface HomeViewController : UIViewController
 
 @end
