@@ -18,15 +18,13 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier] isEqualToString:@"pushPermissionPressed"]){
+    if([[segue identifier] isEqualToString:HOME_PRESS_PERMISSION_SEGUE]){
         FormsViewController *form = (FormsViewController *)[segue destinationViewController];
         [form setIntrotype:IntroTypePermission];
-        NSLog(@" permission home");
     } else
-    if([[segue identifier] isEqualToString:@"pushSimplePressed"]){
+    if([[segue identifier] isEqualToString:HOME_PRESS_SIMPLE_SEGUE]){
         FormsViewController *form = (FormsViewController *)[segue destinationViewController];
         [form setIntrotype:IntroTypeSimple];
-        NSLog(@" simple home");
     }
 }
 
