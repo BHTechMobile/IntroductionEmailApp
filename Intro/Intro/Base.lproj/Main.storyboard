@@ -238,7 +238,7 @@
                     <navigationItem key="navigationItem" id="Jju-Eu-Ab9">
                         <barButtonItem key="rightBarButtonItem" title="See Draft" id="D1e-c2-PA7">
                             <connections>
-                                <segue destination="Ksf-e5-lBM" kind="push" id="etp-xo-JLu"/>
+                                <segue destination="JI4-Ot-ACq" kind="push" identifier="pushPreviewView" id="zdw-mT-oHl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -282,7 +282,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="K4u-ql-9Nz">
-                        <barButtonItem key="rightBarButtonItem" title="Select" id="lfL-l4-yA4"/>
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="lfL-l4-yA4">
+                            <connections>
+                                <segue destination="Ksf-e5-lBM" kind="push" id="mfx-k1-U8n"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -304,7 +308,7 @@
                         <viewControllerLayoutGuide type="bottom" id="X7K-Kb-5B8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qbb-xs-STC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for using this App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02r-Sl-4jQ">
