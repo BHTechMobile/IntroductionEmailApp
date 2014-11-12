@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3AA2C922DE89D45219865D9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84614C4698B45245415C9024 /* libPods.a */; };
+		CE7E19301A11B8B300D2A4D6 /* Contacts_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E192F1A11B8B300D2A4D6 /* Contacts_Test.m */; };
+		CE7E19351A11B8BE00D2A4D6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E19321A11B8BE00D2A4D6 /* Contact.m */; };
+		CE7E19361A11B8BE00D2A4D6 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E19341A11B8BE00D2A4D6 /* Contacts.m */; };
+		CE7E19381A11B8C800D2A4D6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E19371A11B8C800D2A4D6 /* AddressBook.framework */; };
+		CE7E193B1A11C80C00D2A4D6 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E193A1A11C80C00D2A4D6 /* CustomLabel.m */; };
 		CE8E37131A10B3EF002DAE30 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E37121A10B3EF002DAE30 /* HomeViewController.m */; };
 		CE8E37161A10B3FB002DAE30 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E37151A10B3FB002DAE30 /* PreviewViewController.m */; };
 		CE8E37191A10B410002DAE30 /* ChooseContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E37181A10B410002DAE30 /* ChooseContactViewController.m */; };
@@ -21,7 +26,6 @@
 		CEDEEA2B1A10B2A600C5AC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDEEA291A10B2A600C5AC93 /* Main.storyboard */; };
 		CEDEEA2D1A10B2A600C5AC93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDEEA2C1A10B2A600C5AC93 /* Images.xcassets */; };
 		CEDEEA301A10B2A600C5AC93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDEEA2E1A10B2A600C5AC93 /* LaunchScreen.xib */; };
-		CEDEEA3C1A10B2A700C5AC93 /* IntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDEEA3B1A10B2A700C5AC93 /* IntroTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,14 @@
 		385C33071ABFE5F92CE20960 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		84614C4698B45245415C9024 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE839D5B2ECE28E36BDDD038 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE7E192F1A11B8B300D2A4D6 /* Contacts_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts_Test.m; sourceTree = "<group>"; };
+		CE7E19311A11B8BE00D2A4D6 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		CE7E19321A11B8BE00D2A4D6 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		CE7E19331A11B8BE00D2A4D6 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		CE7E19341A11B8BE00D2A4D6 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		CE7E19371A11B8C800D2A4D6 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CE7E19391A11C80C00D2A4D6 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		CE7E193A1A11C80C00D2A4D6 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
 		CE8E37111A10B3EF002DAE30 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CE8E37121A10B3EF002DAE30 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CE8E37141A10B3FB002DAE30 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
@@ -63,7 +75,6 @@
 		CEDEEA2F1A10B2A600C5AC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CEDEEA351A10B2A700C5AC93 /* IntroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDEEA3A1A10B2A700C5AC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEDEEA3B1A10B2A700C5AC93 /* IntroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7E19381A11B8C800D2A4D6 /* AddressBook.framework in Frameworks */,
 				3AA2C922DE89D45219865D9B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +100,7 @@
 		02021DCA9028391FD4F6E74E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E19371A11B8C800D2A4D6 /* AddressBook.framework */,
 				84614C4698B45245415C9024 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -117,6 +130,10 @@
 		CE8E370D1A10B39E002DAE30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E19311A11B8BE00D2A4D6 /* Contact.h */,
+				CE7E19321A11B8BE00D2A4D6 /* Contact.m */,
+				CE7E19331A11B8BE00D2A4D6 /* Contacts.h */,
+				CE7E19341A11B8BE00D2A4D6 /* Contacts.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +168,8 @@
 		CE8E37101A10B39E002DAE30 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E19391A11C80C00D2A4D6 /* CustomLabel.h */,
+				CE7E193A1A11C80C00D2A4D6 /* CustomLabel.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -202,7 +221,7 @@
 		CEDEEA381A10B2A700C5AC93 /* IntroTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEDEEA3B1A10B2A700C5AC93 /* IntroTests.m */,
+				CE7E192F1A11B8B300D2A4D6 /* Contacts_Test.m */,
 				CEDEEA391A10B2A700C5AC93 /* Supporting Files */,
 			);
 			path = IntroTests;
@@ -354,6 +373,7 @@
 			files = (
 				CEDEEA221A10B2A600C5AC93 /* AppDelegate.m in Sources */,
 				CEDEEA1F1A10B2A600C5AC93 /* main.m in Sources */,
+				CE7E19351A11B8BE00D2A4D6 /* Contact.m in Sources */,
 				CE8E37191A10B410002DAE30 /* ChooseContactViewController.m in Sources */,
 				CE8E37161A10B3FB002DAE30 /* PreviewViewController.m in Sources */,
 				CEDEEA251A10B2A600C5AC93 /* Intro.xcdatamodeld in Sources */,
@@ -361,6 +381,8 @@
 				CE8E37131A10B3EF002DAE30 /* HomeViewController.m in Sources */,
 				CED3815F1A11AD5A00369373 /* FormsViewController.m in Sources */,
 				CE8E371C1A10B41E002DAE30 /* ThanksViewController.m in Sources */,
+				CE7E19361A11B8BE00D2A4D6 /* Contacts.m in Sources */,
+				CE7E193B1A11C80C00D2A4D6 /* CustomLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDEEA3C1A10B2A700C5AC93 /* IntroTests.m in Sources */,
+				CE7E19301A11B8B300D2A4D6 /* Contacts_Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

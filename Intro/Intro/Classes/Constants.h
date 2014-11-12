@@ -7,3 +7,5 @@ typedef enum {
     IntroTypePermission,
     IntroTypeSimple
 }IntroType;
+
+#define SUGGESTION_VIEW_CEL_HEIGHT 25

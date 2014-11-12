@@ -1,22 +1,21 @@
 //
-//  IntroTests.m
-//  IntroTests
-//
-//  Created by Tommy on 11/10/14.
+//  Contacts_Test.m
 //  Copyright (c) 2014 BHTech Mobile. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Contacts.h"
 
-@interface IntroTests : XCTestCase
+@interface Contacts_Test : XCTestCase
 
 @end
 
-@implementation IntroTests
+@implementation Contacts_Test
 
 - (void)setUp {
     [super setUp];
+
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -25,8 +24,10 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testCase01 {
     // This is an example of a functional test case.
+    Contacts * contact = [[Contacts alloc] init];
+    NSLog(@"%@",contact.contacts);
     XCTAssert(YES, @"Pass");
 }
 
