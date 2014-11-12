@@ -59,7 +59,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if(scrollView.contentOffset.x>=self.view.frame.size.width){
         _introtype = IntroTypeSimple;
-    }else if(_introtype==IntroTypePermission){
+    }else{
         _introtype = IntroTypePermission;
     }
     _pageControl.currentPage = _introtype;
