@@ -8,9 +8,7 @@
 
 @interface FormsViewController : UIViewController
 
-
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic) IntroType introtype;
-
 
 @end

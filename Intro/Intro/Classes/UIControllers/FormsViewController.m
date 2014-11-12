@@ -24,7 +24,6 @@
                             @"<!DOCTYPE html><html><h2>Simple Intro</h2><a>Hi Justin,</a><p>I wanted to introduced you to Jack.Jack is the product guru and cofounder of Square and Twitter. Based on your mutual interest in mobile payments I think it would be worthwhile for you guys to connect.</p><p>I will let you both take it form here</p><p>Best,</p><p>Jeff</p></html>"
                             ];
     
-    
     for (int i = 0; i < stringHTML.count; i++) {
         CGRect frame;
         frame.origin.x = self.scrollView.frame.size.width * i;
@@ -51,7 +50,6 @@
     
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Select" style:UIBarButtonItemStylePlain target:self action:@selector(selects:)];
     self.navigationItem.rightBarButtonItem = barButton;
-    
 }
 
 
@@ -69,7 +67,6 @@
         _introtype = IntroTypePermission;
     }
     _pageControl.currentPage = _introtype;
-
 }
 
 @end
