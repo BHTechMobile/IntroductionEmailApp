@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MbN-pl-JiL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MbN-pl-JiL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -31,11 +31,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8vq-KT-7wv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ds5-Lk-xu4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ga-Oh-2ac">
-                                <rect key="frame" x="0.0" y="172" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="128" width="320" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="JEG-N9-Kna"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaF-eP-avx">
-                                <rect key="frame" x="0.0" y="250" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="206" width="320" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="UaH-S6-5og"/>
                                 </constraints>
@@ -87,7 +87,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="E9W-jx-2X5"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-MJ-IXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,33 +145,46 @@
                         <viewControllerLayoutGuide type="bottom" id="gXB-9i-ev3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="grJ-Kx-Mpq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whl-5m-W3S">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="464"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whl-5m-W3S">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LRm-zH-6kb" id="Dud-2u-6R8"/>
+                                </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="jXx-Bz-wQA">
+                                <rect key="frame" x="140" y="380" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="nQC-sw-lsA"/>
+                                    <constraint firstAttribute="width" constant="39" id="sJP-EB-TRo"/>
+                                </constraints>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jXx-Bz-wQA" secondAttribute="centerX" constant="0.5" id="7JC-aj-Aop"/>
                             <constraint firstAttribute="trailing" secondItem="whl-5m-W3S" secondAttribute="trailing" id="HW4-V2-qie"/>
                             <constraint firstItem="whl-5m-W3S" firstAttribute="leading" secondItem="grJ-Kx-Mpq" secondAttribute="leading" id="a4W-WO-SCA"/>
                             <constraint firstAttribute="bottom" secondItem="whl-5m-W3S" secondAttribute="bottom" id="fXX-Vl-VFZ"/>
-                            <constraint firstItem="whl-5m-W3S" firstAttribute="top" secondItem="grJ-Kx-Mpq" secondAttribute="top" constant="20" id="wcU-K1-aaX"/>
+                            <constraint firstItem="gXB-9i-ev3" firstAttribute="top" secondItem="jXx-Bz-wQA" secondAttribute="bottom" constant="-1" id="iTW-Kc-t5d"/>
+                            <constraint firstItem="whl-5m-W3S" firstAttribute="top" secondItem="grJ-Kx-Mpq" secondAttribute="top" id="wcU-K1-aaX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uO2-M2-vZa"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="484"/>
+                    <size key="freeformSize" width="320" height="416"/>
                     <connections>
+                        <outlet property="pageControl" destination="jXx-Bz-wQA" id="wYn-pJ-ZnG"/>
                         <outlet property="scrollView" destination="whl-5m-W3S" id="WAx-E4-Fb7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQ3-Sl-Z1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-13"/>
+            <point key="canvasLocation" x="249" y="19"/>
         </scene>
         <!--Thanks View Controller-->
         <scene sceneID="ngO-jY-npA">
@@ -193,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oaJ-0q-uHp"/>
+        <segue reference="PLP-Yt-bG4"/>
     </inferredMetricsTieBreakers>
 </document>
