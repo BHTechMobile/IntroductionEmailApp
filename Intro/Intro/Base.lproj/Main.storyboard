@@ -42,9 +42,6 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="253-4M-xne" kind="push" identifier="pushPermissionPressed" id="QSU-mK-1zZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaF-eP-avx">
                                 <rect key="frame" x="0.0" y="250" width="320" height="70"/>
@@ -53,9 +50,6 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="253-4M-xne" kind="push" identifier="pushSimplePressed" id="rRS-Hw-hTr"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-MJ-IXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="24"/>
+            <point key="canvasLocation" x="-164" y="24"/>
         </scene>
         <!--Preview View Controller-->
         <scene sceneID="81T-e2-MEv">
@@ -84,35 +78,11 @@
                     <view key="view" contentMode="scaleToFill" id="VYR-1p-8jd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1n-GV-1R7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <subviews>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcp-9M-Lg6">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </webView>
-                                </subviews>
-                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="BUd-lg-eF4">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0xh-kv-hc3">
-                            <connections>
-                                <action selector="CancelPressed:" destination="253-4M-xne" id="K3m-2s-wAY"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Select" id="Hr5-Rw-ly7"/>
-                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="webView" destination="Lcp-9M-Lg6" id="CPt-NF-eYx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTd-f8-dPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,13 +99,12 @@
                     <view key="view" contentMode="scaleToFill" id="ztH-vc-b5C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLC-Es-3hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="24"/>
+            <point key="canvasLocation" x="244" y="862"/>
         </scene>
         <!--Thanks View Controller-->
         <scene sceneID="ngO-jY-npA">
@@ -148,44 +117,14 @@
                     <view key="view" contentMode="scaleToFill" id="8Yb-ZW-l8W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for using this App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-Y3-6TW">
-                                <rect key="frame" x="0.0" y="201" width="320" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDr-M2-0GP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="barTintColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem id="xrg-ma-wlm">
-                                        <barButtonItem key="leftBarButtonItem" title="Send again" id="Lgv-B0-hkm">
-                                            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="sendAgainPressed:" destination="qqT-Nn-Uhv" id="Qqb-Bi-goC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.47072195480000001" blue="0.37172249839999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vsl-We-rbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationItem id="9Hq-G0-Gy0">
-                    <barButtonItem key="leftBarButtonItem" title="Item" id="Ixl-Mx-cdy"/>
-                    <barButtonItem key="rightBarButtonItem" title="Item" id="b78-T6-uF7"/>
-                </navigationItem>
             </objects>
-            <point key="canvasLocation" x="250" y="702"/>
+            <point key="canvasLocation" x="-164" y="862"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QSU-mK-1zZ"/>
-    </inferredMetricsTieBreakers>
 </document>
