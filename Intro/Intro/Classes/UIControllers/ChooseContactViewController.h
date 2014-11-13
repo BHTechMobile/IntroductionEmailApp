@@ -23,5 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelNameIntro;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldNamePermission;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldEmailPermission;
+
 @property (nonatomic) IntroType introtype;
+
 @end

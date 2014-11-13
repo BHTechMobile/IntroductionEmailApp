@@ -15,8 +15,8 @@
 @protocol SuggestionViewDataSource <NSObject>
 
 @required
--(CGFloat)maxHeightForSuggestionView;
--(NSString*)filterStringForSuggestionView;
+-(CGFloat)maxHeightForSuggestionView:(SuggestionView*)suggestionView;
+-(NSString*)filterStringForSuggestionView:(SuggestionView*)suggestionView;
 
 @end
 

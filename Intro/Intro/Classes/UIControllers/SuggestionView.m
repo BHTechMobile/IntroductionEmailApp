@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) NSArray *contacts;
 @property (strong, nonatomic) Contacts *contactList;
-
+@property (nonatomic, assign) CGRect myFrame;
 @end
 
 @implementation SuggestionView
@@ -69,21 +69,19 @@
 #pragma mark - action
 
 -(void)reloadData{
-    _contacts = [_contactList contactsWithFilterString:[_suggestionViewDatasource filterStringForSuggestionView]];
+    _contacts = [_contactList contactsWithFilterString:[_suggestionViewDatasource filterStringForSuggestionView:self]];
     
     CGRect updateFrame = self.frame;
     
-    if (_contacts.count *SUGGESTION_VIEW_CEL_HEIGHT < [_suggestionViewDatasource maxHeightForSuggestionView]) {
+    if (_contacts.count *SUGGESTION_VIEW_CEL_HEIGHT < [_suggestionViewDatasource maxHeightForSuggestionView:self]) {
         updateFrame.size.height = _contacts.count * SUGGESTION_VIEW_CEL_HEIGHT;
     }
     else{
-        updateFrame.size.height = [_suggestionViewDatasource maxHeightForSuggestionView];
+        updateFrame.size.height = [_suggestionViewDatasource maxHeightForSuggestionView:self];
     }
     self.frame = updateFrame;
     [self layoutIfNeeded];
     [_contactsTableView reloadData];
 }
-
-
 
 @end
