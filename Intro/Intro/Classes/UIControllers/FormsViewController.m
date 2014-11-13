@@ -51,7 +51,26 @@
 
 -(IBAction)selects:(id)sender{
     //TODO: action for select button
+    if (self.scrollView.contentOffset.x >= 320) {
+        _introtype = IntroTypeSimple;
+        NSLog(@"Simple point");
+        
+    }else if (self.scrollView.contentOffset.x==0){
+        _introtype = IntroTypePermission;
+        NSLog(@"Permission point");
+        
+    }
+    
+    [self performSegueWithIdentifier:@"FormsViewController" sender:nil];
 
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"FormsViewController"]){
+        
+        ChooseContactViewController *chooseContact = (ChooseContactViewController *)[segue destinationViewController];
+        
+        [chooseContact setIntrotype:_introtype];
+    }
 }
 
 #pragma mark - UIScrollview Delegate
