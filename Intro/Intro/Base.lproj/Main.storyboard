@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MbN-pl-JiL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MbN-pl-JiL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -115,7 +115,7 @@
                                 </constraints>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOd-eA-Wd0">
-                                <rect key="frame" x="5" y="20" width="43" height="30"/>
+                                <rect key="frame" x="11" y="20" width="43" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="43" id="6Y6-6Z-Ur1"/>
                                     <constraint firstAttribute="height" constant="30" id="zcd-j2-PzV"/>
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHI-tG-QIW">
-                                <rect key="frame" x="272" y="20" width="43" height="30"/>
+                                <rect key="frame" x="258" y="20" width="43" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6hn-ge-h2T"/>
                                     <constraint firstAttribute="width" constant="43" id="Ke8-4p-o2y"/>
@@ -151,10 +151,10 @@
                             <constraint firstAttribute="centerX" secondItem="jXx-Bz-wQA" secondAttribute="centerX" constant="-0.5" id="9eC-JW-LZu"/>
                             <constraint firstItem="JHI-tG-QIW" firstAttribute="top" secondItem="LFK-Kt-gAu" secondAttribute="bottom" constant="20" id="Cto-RD-te6"/>
                             <constraint firstAttribute="trailing" secondItem="whl-5m-W3S" secondAttribute="trailing" constant="5" id="Dz9-P6-KsS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JHI-tG-QIW" secondAttribute="trailing" constant="-11" id="HLG-Xp-gMg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JHI-tG-QIW" secondAttribute="trailingMargin" constant="11" id="HLG-Xp-gMg"/>
                             <constraint firstItem="whl-5m-W3S" firstAttribute="leading" secondItem="grJ-Kx-Mpq" secondAttribute="leading" constant="5" id="UiC-BZ-qBx"/>
                             <constraint firstAttribute="bottom" secondItem="whl-5m-W3S" secondAttribute="bottom" constant="5" id="UvR-S6-Sqj"/>
-                            <constraint firstItem="zOd-eA-Wd0" firstAttribute="leading" secondItem="grJ-Kx-Mpq" secondAttribute="leadingMargin" constant="-11" id="tjk-dL-bwD"/>
+                            <constraint firstItem="zOd-eA-Wd0" firstAttribute="leading" secondItem="grJ-Kx-Mpq" secondAttribute="leading" constant="11" id="tjk-dL-bwD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uO2-M2-vZa"/>
