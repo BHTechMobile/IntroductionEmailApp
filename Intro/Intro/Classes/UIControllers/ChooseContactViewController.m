@@ -83,12 +83,12 @@
 }
 
 - (IBAction)seeDraft:(id)sender {
-//    if (((![_textFieldEmailSimple.text isEqualToString:@""] || _textFieldEmailSimple.text != nil) && [self validateEmail:_textFieldEmailSimple.text]) && ((![_textFieldEmailPermission.text isEqualToString:@""] || _textFieldEmailPermission.text != nil) && [self validateEmail:_textFieldEmailPermission.text])) {
+    if (((![_textFieldEmailSimple.text isEqualToString:@""] || _textFieldEmailSimple.text != nil) && [self validateEmail:_textFieldEmailSimple.text]) && ((![_textFieldEmailPermission.text isEqualToString:@""] || _textFieldEmailPermission.text != nil) && [self validateEmail:_textFieldEmailPermission.text])) {
         [self performSegueWithIdentifier:@"pushPreviewView" sender:nil];
-//    }
-//    else{
-//        [[[UIAlertView alloc] initWithTitle:nil message:@"Input email is invalid.\nPlease check it again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//    }
+    }
+    else{
+        [[[UIAlertView alloc] initWithTitle:nil message:@"Input email is invalid.\nPlease check it again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
 }
 - (IBAction)clickBackground:(id)sender {
     [_textFieldNamePermission endEditing:YES];
