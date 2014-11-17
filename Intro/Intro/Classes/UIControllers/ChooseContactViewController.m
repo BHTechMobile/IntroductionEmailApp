@@ -83,13 +83,23 @@
 }
 
 - (IBAction)seeDraft:(id)sender {
-//    if (((![_textFieldEmailSimple.text isEqualToString:@""] || _textFieldEmailSimple.text != nil) && [self validateEmail:_textFieldEmailSimple.text]) && ((![_textFieldEmailPermission.text isEqualToString:@""] || _textFieldEmailPermission.text != nil) && [self validateEmail:_textFieldEmailPermission.text])) {
-        [self performSegueWithIdentifier:@"pushPreviewView" sender:nil];
-//    }
-//    else{
-//        [[[UIAlertView alloc] initWithTitle:nil message:@"Input email is invalid.\nPlease check it again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//    }
-}
+    if (_introtype == IntroTypePermission) {
+        if (((![_textFieldEmailPermission.text isEqualToString:@""] || _textFieldEmailPermission.text != nil) && [self validateEmail:_textFieldEmailPermission.text])) {
+            [self performSegueWithIdentifier:@"pushPreviewView" sender:nil];
+        }
+        else{
+            [[[UIAlertView alloc] initWithTitle:nil message:@"Input email is invalid.\nPlease check it again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    } else if(_introtype == IntroTypeSimple){
+        if (((![_textFieldEmailSimple.text isEqualToString:@""] || _textFieldEmailSimple.text != nil) && [self validateEmail:_textFieldEmailSimple.text]) && ((![_textFieldEmailPermission.text isEqualToString:@""] || _textFieldEmailPermission.text != nil) && [self validateEmail:_textFieldEmailPermission.text])) {
+            [self performSegueWithIdentifier:@"pushPreviewView" sender:nil];
+        }
+        else{
+            [[[UIAlertView alloc] initWithTitle:nil message:@"Input email is invalid.\nPlease check it again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+
+    }
+    }
 - (IBAction)clickBackground:(id)sender {
     [_textFieldNamePermission endEditing:YES];
     [_textFieldEmailPermission endEditing:YES];
@@ -182,9 +192,8 @@
 
 - (BOOL)validateEmail:(NSString *)checkString{
     BOOL stricterFilter = YES; // Discussion http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/
-    NSString *stricterFilterString = @"[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}";
-    NSString *laxString = @".+@([A-Za-z0-9]+\\.)+[A-Za-z]{2}[A-Za-z]*";
-    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+
+    NSString *emailRegex = @"[A-Za-z0-9]+[A-Za-z0-9-_]*(\\.[A-Za-z0-9-_]+)*[A-Za-z0-9]@[A-Za-z0-9]+[A-Za-z0-9-]*(\\.[A-Za-z0-9-]+)*[A-Za-z0-9]+(\\.[A-Za-z]{2,6})";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:checkString];
 }
