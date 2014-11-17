@@ -31,22 +31,27 @@
 }
 
 - (IBAction)clickSelectButton:(id)sender {
+    
     if(![MFMailComposeViewController canSendMail] ) {
         NSLog(@"Cannot send mail\n%s", __PRETTY_FUNCTION__) ;
         return ;
     }
     
     // Email Subject
+    
     NSString *emailTitle = @"Open to being introduced to?";
 
     NSArray *toRecipents = @[_email.receiverEmail];
+    NSArray *ccRecipents = @[_email.senderEmail];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
-    [mc setMessageBody:_email.introType==IntroTypePermission?[ NSString stringWithFormat:EMAIL_PERMISSION_CONTENT,_email.receiverName]:[ NSString stringWithFormat:EMAIL_SIMPLE_CONTENT,_email.receiverName,_email.senderName,_email.senderName] isHTML:NO];
+    [mc setMessageBody:(_email.introType==IntroTypePermission)?[ NSString stringWithFormat:EMAIL_PERMISSION_CONTENT,_email.receiverName]:[ NSString stringWithFormat:EMAIL_SIMPLE_CONTENT,_email.receiverName,_email.senderName,_email.senderName] isHTML:NO];
     [mc setToRecipients:toRecipents];
-    
+    if (_email.introType == IntroTypeSimple) {
+        [mc setCcRecipients:ccRecipents];
+    }
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:NULL];
 }
@@ -57,7 +62,6 @@
     }
     
     [self dismissViewControllerAnimated:YES completion:^{
-        
     }];
 }
 
