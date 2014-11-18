@@ -527,6 +527,7 @@
 			baseConfigurationReference = 385C33071ABFE5F92CE20960 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tran Vu Viet Anh (N2AZ5MXD3Y)";
 				INFOPLIST_FILE = Intro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -542,6 +543,7 @@
 			baseConfigurationReference = BE839D5B2ECE28E36BDDD038 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tran Vu Viet Anh (N2AZ5MXD3Y)";
 				INFOPLIST_FILE = Intro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
