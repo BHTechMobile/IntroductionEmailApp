@@ -99,7 +99,7 @@
                 [result addObject:contact];
             }
         }
-        else if (([contact.firstName rangeOfString:filterString].location != NSNotFound)||([contact.email rangeOfString:filterString].location != NSNotFound)) {
+        else if (([contact.firstName rangeOfString:filterString].location != NSNotFound)||([contact.email rangeOfString:filterString].location != NSNotFound)||([contact.lastName rangeOfString:filterString].location != NSNotFound)) {
             [result addObject:contact];
         }
     }

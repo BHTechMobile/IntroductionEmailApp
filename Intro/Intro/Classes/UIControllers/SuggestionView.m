@@ -54,7 +54,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-   cell.textLabel.text = [((Contact*)_contacts[indexPath.row]).firstName isEqual:[NSNull null]]? ((Contact*)_contacts[indexPath.row]).email:((Contact*)_contacts[indexPath.row]).firstName;
+    cell.textLabel.text = [((Contact*)_contacts[indexPath.row]).firstName isEqual:[NSNull null]]? (((Contact*)_contacts[indexPath.row]).email):([((Contact*)_contacts[indexPath.row]).lastName isEqual:[NSNull null]]?((Contact*)_contacts[indexPath.row]).firstName:[NSString stringWithFormat:@"%@ %@",((Contact*)_contacts[indexPath.row]).firstName,((Contact*)_contacts[indexPath.row]).lastName]);
     return cell;
 }
 
